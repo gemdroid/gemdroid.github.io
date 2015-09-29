@@ -1,1 +1,158 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+	<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title> GemDroid </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Haibo">
+        <meta name="author" content="Haibo Zhang">
+		<link rel="shortcut icon" href="GemDroid.ico">
+
+        <link href="bootstrap.min.css" rel="stylesheet">
+    </head>
+	<body screen_capture_injected="true"> 
+		<link href="alt.css" rel="stylesheet">
+		<style type="text/css"></style>
+    
+        
+
+
+
+
+
+
+
+		<div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a href="index.html" class="brand">Haibo</a>
+                    <div class="nav-collapse">
+                        <ul class="nav">
+							<li><a href="index.html">Main</a></li>
+							<li class="active"><a href="gemdroid.htm">GemDroid</a></li>
+							<!--<li><a href="activities.htm">Activities</a></li>
+							<li><a href="favorites.htm">Favorites</a></li>-->
+							<li><a href="guestbook.htm">Guestbook</a></li>
+							<li><a href="./docs/Haibo_CV.pdf">CV</a></li>
+                        </ul>
+				
+						<ul class="nav pull-right">
+							<li class="divider-vertical"></li>
+                            <li><a class="brand"><g:plusone size="small" annotation="none"></g:plusone></a></li>
+                            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+								<li><a href="http://www.cse.psu.edu/hpcl/people.html">HPCL@PSU</a></li>
+                                <li><a href="http://arch-www.cs.wisc.edu/home">WWW Architecture</a></li>
+                                <li><a href="http://www.informatik.uni-trier.de/~ley/db/">dblp</a></li>
+                                
+                                
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+			<div class="page-header">
+ 				<figure>					
+					<a href="http://www.cse.psu.edu"><img src="imgs/PennStateLogo.png" alt="PennState" width="150" height="100" align="right" style="float:right" /></a>				
+				</figure>
+				<h1>GemDroid <small> <a href = "https://github.com/huz123/GemDroid_QEMU" style="color: blue">[Download]</a></small><br></h1>
+				<h3>An Infrastructure to Evaluate Mobile Platforms</h3>
+
+						<div class="progress progress-striped active">
+						<div class="bar" style="width: 100%;">  1st Version Released  </div> 
+						</div>
+			</div>
+
+			<div class="row">
+				<div class="span9">
+						<h2> Overview  </h2>
+						<p>
+						As the demand for feature-rich mobile systems such as smartphones and tablets has outpaced other computing systems and is expected to continue at a faster rate, it is projected that SoCs with tens of cores and hundreds of IPs (or accelerator) will be designed to provide unprecedented level of features and functionality in future. Design of such mobile systems with required QoS and power budgets along with other design constraints will be a daunting task for computer architects since any ad hoc, piece-meal solution is unlikely to result in an optimal design. This requires early exploration of the complete design space to understand the system-level design trade-offs. We present <b>GemDroid</b>, a comprehensive simulation infrastructure to address these concerns. 
+						</p>
+						<p></p>
+						<br>
+				
+
+						<b>GemDroid</b> has been designed by integrating 
+						<h4>  
+							<ul>
+							<li><a href="http://developer.android.com/tools/devices/emulator.html">The Android open-source emulator</a></li> 
+							<li><a href="http://gem5.org/Main_Page">The GEM5 core simulator</a></li> 
+							</ul>
+							<figure>					
+							<img src="imgs/GemDroid.Overview.png" alt="GemDroid" width="500" height="400" align="left" style="border:dotted 1px grey" />					
+						</figure> 
+						</h4>
+						</p>
+						<br>
+
+						<hr>
+				</div>
+				<div class="span9">
+						<h2>Highlights</h2>
+						<p></p>
+
+						<ul>
+						<li><b>Hybrid approach</b> – Traces from Android Emulator with many IP calls and input.</li>
+						<li>IPs are modeled with various complexities – user defined.</li>
+						<li>Enables plug and play of custom accelerators.</li>
+					    <li>Integrated under Gem5 framework.</li>
+					    <li> Support for multi-applications. </li>
+						<li>Integrated power model for components </li>
+						<li> Performance Metrics: IPC. FPS, Frame Drop Rates</li>
+
+						</ul>
+						<hr>
+
+						<h2> People  </h2>
+						<p></p>
+						<list>
+						<b> <a href="http://www.cse.psu.edu/~nzc5047/">Nachiappan Chidambaram Nachiappan</a> (Nachi)</b> 
+						<br>
+						<b> Praveen Yedlapalli </b> 
+						<br>
+		                <b> <a href="http://huz123.github.io">Haibo Zhang </a> </b> 
+						<br>
+		                <b> Jihyun Ryoo </b> 
+						<br>
+						<hr>
+
+						<h2> Publications  </h2>
+						<p></p>
+						<list>
+						<b> HPCA - 2015 </b> [COMING SOON]
+						<li>Nachiappan Chidambaram Nachiappan,  Praveen Yedlapalli (Pennsylvania State University),  Niranjan Soundararajan (Intel),  Anand Sivasubramaniam,  Mahmut Kandemir (Pennsylvania State University), "<em>Domain Knowledge Based Energy Management in Handhelds</em>", HPCA, 2015. <br>
+						<br>
+		                <b> MICRO - 2014 </b> 
+						<li> Praveen Yedlapalli*, Nachiappan Chidambaram Nachiappan*, Niranjan Soundararajan, Mahmut Kandemir, Anand Sivasubramaniam, Chita R. Das, "<em>Short-Circuiting Memory Traffic in Handheld Platforms</em>", MICRO, 2014. <br></li>
+						<br>
+		                <b> SIGMETRICS - 2014 </b> [<a href="docs/GemDroid-SIGMETRICS-2014.pdf">PDF</a>] [<a href="docs/GemDroid-SIGMETRICS.bib" target="new">BibTeX</a>]
+						<li> Nachiappan Chidambaram Nachiappan, Praveen Yedlapalli, Niranjan Soundararajan, Mahmut Kandemir, Anand Sivasubramaniam, Chita R. Das, "<em>GemDroid: A Framework To Evaluate Mobile Platforms</em>", International Conference on Measurement and Modeling of Computer Systems (SIGMETRICS), 2014. </li>
+						<hr>
+			</div>
+
+            <footer class="footer">
+               <!---- <p class="pull-right"><a href="./index.htm">Top</a></p>-->
+                <p>Built with <a href="http://twitter.github.com/bootstrap/">Bootstrap</a>.Last update: 2015-02-01</p>
+                <p>© MDL & HPCL @ CSE, Penn State &nbsp; &nbsp; &nbsp; </p>
+              
+            </footer>
+        </div>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+		
+    </body>
+</html>
+	
+
